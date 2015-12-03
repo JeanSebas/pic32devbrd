@@ -1,0 +1,213 @@
+EESchema Schematic File Version 2
+LIBS:pic32brd-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mylib
+LIBS:RS
+LIBS:pic32brd-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 7900 1900 1500 1400
+U 5626F3E4
+F0 "FTDI" 60
+F1 "FTDI.sch" 60
+F2 "FTX" I R 9400 2100 60 
+F3 "FRX" I R 9400 2250 60 
+F4 "USBD+" I L 7900 2150 60 
+F5 "USBD-" I L 7900 2300 60 
+F6 "5V0" I L 7900 2500 60 
+F7 "GND" I L 7900 2650 60 
+$EndSheet
+Wire Wire Line
+	7750 2500 7900 2500
+Wire Wire Line
+	7750 2650 7900 2650
+Wire Wire Line
+	7750 2300 7900 2300
+Wire Wire Line
+	7750 2150 7900 2150
+Wire Wire Line
+	9400 2100 9550 2100
+Wire Wire Line
+	9400 2250 9550 2250
+Text Label 7750 2150 2    60   ~ 0
+USBD+
+Text Label 7750 2300 2    60   ~ 0
+USBD-
+Text Label 7750 2500 2    60   ~ 0
+5V0
+Text Label 7750 2650 2    60   ~ 0
+GND
+$Comp
+L USB_OTG P?
+U 1 1 562992D9
+P 4300 1600
+F 0 "P?" H 4625 1475 50  0000 C CNN
+F 1 "USB_OTG" H 4300 1800 50  0000 C CNN
+F 2 "" V 4250 1500 60  0000 C CNN
+F 3 "" V 4250 1500 60  0000 C CNN
+	1    4300 1600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4600 1400 5150 1400
+Wire Wire Line
+	4600 1500 4750 1500
+Wire Wire Line
+	4600 1600 4750 1600
+Wire Wire Line
+	4600 1800 4750 1800
+Text Label 4750 1800 0    60   ~ 0
+GND
+Text Label 4750 1600 0    60   ~ 0
+USBD-
+Text Label 4750 1500 0    60   ~ 0
+USBD+
+Text Label 9550 2100 0    60   ~ 0
+FTX
+Text Label 9550 2250 0    60   ~ 0
+FRX
+$Comp
+L F_Small F?
+U 1 1 562AF443
+P 5250 1400
+F 0 "F?" H 5210 1460 50  0000 L CNN
+F 1 "F_Small" H 5130 1340 50  0000 L CNN
+F 2 "" H 5250 1400 60  0000 C CNN
+F 3 "" H 5250 1400 60  0000 C CNN
+	1    5250 1400
+	-1   0    0    1   
+$EndComp
+Text Label 5500 1400 0    60   ~ 0
+5V0
+Wire Wire Line
+	5350 1400 5500 1400
+$Sheet
+S 3350 3050 1700 3100
+U 562AFE04
+F0 "microcontroller" 60
+F1 "microcontroller.sch" 60
+F2 "RA2" I L 3350 5100 60 
+F3 "RA3" I L 3350 5250 60 
+F4 "RB5" I L 3350 5400 60 
+F5 "RA0" I L 3350 4000 60 
+F6 "RA1" I L 3350 4150 60 
+F7 "RB0" I L 3350 4300 60 
+F8 "RB1" I L 3350 4450 60 
+F9 "RB2" I L 3350 4600 60 
+F10 "RB3" I L 3350 4750 60 
+F11 "RB15" I R 5050 3650 60 
+F12 "RB14" I R 5050 3800 60 
+F13 "RB13" I R 5050 3950 60 
+F14 "RB9" I R 5050 4600 60 
+F15 "RB8" I R 5050 4750 60 
+F16 "RB7" I R 5050 4900 60 
+F17 "3V3" I L 3350 3250 60 
+F18 "GND" I L 3350 3400 60 
+F19 "MRX" I L 3350 5850 60 
+F20 "MTX" I L 3350 5750 60 
+$EndSheet
+$Sheet
+S 8100 4700 600  550 
+U 562B26FE
+F0 "SWREG_5to3V3" 60
+F1 "SWREG_5to3V3.sch" 60
+F2 "5V0" I L 8100 4850 60 
+F3 "GND" I L 8100 5100 60 
+F4 "3V3" I R 8700 4850 60 
+$EndSheet
+Wire Wire Line
+	8100 4850 7900 4850
+Wire Wire Line
+	8100 5100 7900 5100
+Wire Wire Line
+	8700 4850 8900 4850
+Text Label 7900 4850 2    60   ~ 0
+5V0
+Text Label 7900 5100 2    60   ~ 0
+GND
+Text Label 8900 4850 0    60   ~ 0
+3V3
+Wire Wire Line
+	3350 3250 3200 3250
+Wire Wire Line
+	3350 3400 3200 3400
+Wire Wire Line
+	3350 4000 3200 4000
+Wire Wire Line
+	3350 4150 3200 4150
+Wire Wire Line
+	3350 4300 3200 4300
+Wire Wire Line
+	3350 4450 3200 4450
+Wire Wire Line
+	3350 4600 3200 4600
+Wire Wire Line
+	3350 4750 3200 4750
+Wire Wire Line
+	3350 5100 3200 5100
+Wire Wire Line
+	3350 5250 3200 5250
+Wire Wire Line
+	3350 5400 3200 5400
+Wire Wire Line
+	3350 5750 3200 5750
+Wire Wire Line
+	3350 5850 3200 5850
+Wire Wire Line
+	5050 3650 5200 3650
+Wire Wire Line
+	5050 3800 5200 3800
+Wire Wire Line
+	5050 3950 5200 3950
+Wire Wire Line
+	5050 4600 5200 4600
+Wire Wire Line
+	5050 4750 5200 4750
+Wire Wire Line
+	5050 4900 5200 4900
+Text Label 3200 3250 2    60   ~ 0
+3V3
+Text Label 3200 3400 2    60   ~ 0
+GND
+$EndSCHEMATC
