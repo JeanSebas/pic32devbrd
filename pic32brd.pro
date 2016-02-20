@@ -1,4 +1,4 @@
-update=Mon 26 Oct 2015 10:52:50 AM PDT
+update=Thu 21 Jan 2016 07:34:31 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/james/kicad/lib;/home/james/Repos/robosub_pcbs/lbr_kicad
+LibDir=/home/james/kicad/lib;/home/james/Repos/robosub_pcbs/lbr_kicad;/usr/share/kicad/library
 [eeschema/libraries]
 LibName1=pic32brd-rescue
 LibName2=power
