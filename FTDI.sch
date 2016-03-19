@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:pic32brd-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -58,7 +57,7 @@ F 3 "" H 6150 3100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5350 2600 2    60   ~ 0
-3V3
+3V3_IO
 $Comp
 L C C3
 U 1 1 5626FAE6
@@ -75,7 +74,7 @@ GND
 Text Label 4500 4100 0    60   ~ 0
 GND
 Text Label 4500 3600 0    60   ~ 0
-3V3
+3V3_IO
 Text Label 5350 3100 2    60   ~ 0
 5V0
 Text Label 6950 3450 0    60   ~ 0
@@ -165,7 +164,7 @@ TXLED
 Text Label 8400 4700 2    60   ~ 0
 RXLED
 Text Label 8400 3400 0    60   ~ 0
-3V3
+3V3_IO
 Text Label 3750 2900 0    60   ~ 0
 GND
 Text HLabel 3150 3300 0    60   Input ~ 0
@@ -237,5 +236,9 @@ Connection ~ 3850 2450
 Wire Wire Line
 	5450 3550 5450 3650
 Text Label 5350 3650 2    60   ~ 0
-3V3
+3V3_IO
+Text Notes 8600 4000 0    60   ~ 0
+Red	
+Text Notes 7600 4000 0    60   ~ 0
+Yellow
 $EndSCHEMATC

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:pic32brd-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -92,17 +91,13 @@ $EndComp
 Wire Wire Line
 	4600 1400 5150 1400
 Wire Wire Line
-	4600 1500 4750 1500
+	4600 1500 6000 1500
 Wire Wire Line
-	4600 1600 4750 1600
+	4600 1600 6000 1600
 Wire Wire Line
 	4600 1800 4750 1800
 Text Label 4750 1800 0    60   ~ 0
 GND
-Text Label 4750 1600 0    60   ~ 0
-USBD-
-Text Label 4750 1500 0    60   ~ 0
-USBD+
 Text Label 9550 2100 0    60   ~ 0
 FTX
 Text Label 9550 2250 0    60   ~ 0
@@ -410,4 +405,83 @@ Text Label 2400 2600 0    60   ~ 0
 RB5
 Text Label 2400 3600 0    60   ~ 0
 GND
+$Comp
+L R R9
+U 1 1 56E62C5F
+P 6150 1600
+F 0 "R9" V 6230 1600 50  0000 C CNN
+F 1 "27" V 6150 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6080 1600 50  0001 C CNN
+F 3 "" H 6150 1600 50  0000 C CNN
+	1    6150 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 56E62D4C
+P 6150 1500
+F 0 "R8" V 6230 1500 50  0000 C CNN
+F 1 "27" V 6150 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6080 1500 50  0001 C CNN
+F 3 "" H 6150 1500 50  0000 C CNN
+	1    6150 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C5
+U 1 1 56E62E43
+P 5600 1900
+F 0 "C5" H 5625 2000 50  0000 L CNN
+F 1 "47p" H 5625 1800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5638 1750 50  0001 C CNN
+F 3 "" H 5600 1900 50  0000 C CNN
+	1    5600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 56E63433
+P 5900 1900
+F 0 "C11" H 5925 2000 50  0000 L CNN
+F 1 "47p" H 5925 1800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5938 1750 50  0001 C CNN
+F 3 "" H 5900 1900 50  0000 C CNN
+	1    5900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1750 5600 1500
+Connection ~ 5600 1500
+Wire Wire Line
+	5900 1750 5900 1600
+Connection ~ 5900 1600
+Wire Wire Line
+	5600 2050 5600 2150
+Wire Wire Line
+	5600 2150 5900 2150
+Wire Wire Line
+	5900 2150 5900 2050
+Wire Wire Line
+	5750 2150 5750 2300
+Wire Wire Line
+	5750 2300 5800 2300
+Connection ~ 5750 2150
+Text Label 5800 2300 0    60   ~ 0
+GND
+Wire Wire Line
+	6300 1500 6500 1500
+Wire Wire Line
+	6300 1600 6500 1600
+Text Label 6500 1500 0    60   ~ 0
+USBD-
+Text Label 6500 1600 0    60   ~ 0
+USBD+
+Text Label 5600 1700 2    60   ~ 0
+D-
+Text Label 5900 1700 2    60   ~ 0
+D+
+Text Notes 1300 3050 0    60   ~ 0
+Green
+Text Notes 2450 3050 0    60   ~ 0
+Blue
 $EndSCHEMATC
