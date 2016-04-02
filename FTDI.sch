@@ -238,7 +238,7 @@ Wire Wire Line
 Text Label 5350 3650 2    60   ~ 0
 3V3_IO
 Text Notes 8600 4000 0    60   ~ 0
-Red	
-Text Notes 7600 4000 0    60   ~ 0
 Yellow
+Text Notes 7700 4000 0    60   ~ 0
+Red
 $EndSCHEMATC

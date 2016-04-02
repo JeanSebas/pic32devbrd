@@ -1325,10 +1325,10 @@
     )
   )
 
-  (gr_text Rx (at 131.375 49.675) (layer F.SilkS) (tstamp 56EDAB65)
+  (gr_text Tx (at 131.375 49.675) (layer F.SilkS) (tstamp 56EDAB65)
     (effects (font (size 1.016 1.016) (thickness 0.127)))
   )
-  (gr_text Tx (at 128.55 49.725) (layer F.SilkS) (tstamp 56EDAB52)
+  (gr_text Rx (at 128.55 49.725) (layer F.SilkS) (tstamp 56EDAB52)
     (effects (font (size 1.016 1.016) (thickness 0.127)))
   )
   (gr_text RB5 (at 119.507 54.61) (layer F.SilkS) (tstamp 56A6B330)
