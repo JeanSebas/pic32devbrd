@@ -10,3 +10,6 @@ A general purpose development board for the PIC32MX250F128B microcontroller. Ple
 * Tx/Rx LEDs
 * General-purpose LED
 
+---
+
+Also, you should check out the [SUBLIBinal library](https://github.com/PalouseRobosub/SUBLIBinal), an efficient interrupt-driven library designed for boards using this microcontroller.
